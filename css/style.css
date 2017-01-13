@@ -1,0 +1,91 @@
+#info-unit {
+  display: flex;
+}
+
+body, section {
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+/*body, section {
+    color: white;
+    text-align: center;
+    background-color: grey;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}*/
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/*#info-unit {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+#info-uunit{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.agent1, .agent2, .agent3, .agent4 {
+  position: relative;
+  width: 25%;
+}
+
+.agent-pic {
+  display: block;
+  width: 100%;
+  height: auto;*/
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  text-align: center;
+}
+
+.agent1:hover .overlay {
+  width: 100%;
+}
+
+.agent2:hover .overlay {
+  width: 100%;
+}
+
+.agent3:hover .overlay {
+  width: 100%;
+}
+
+.agent4:hover .overlay {
+  width: 100%;
+}
+
+.agent-bio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+}
