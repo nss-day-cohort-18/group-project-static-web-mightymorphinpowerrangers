@@ -1,11 +1,43 @@
-
-
 body {
-    background-color: lightblue;
+    background-color: #c0e2a0;
     padding-top: 50px;
-    padding-right: 30px;
+    padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  background-color: #dbd0c6;
+  color: black;
+  padding: 50px;
+}
+
+.container h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.column {
+  width:50%;
+  float:left;
+}
+
+.column img {
+  width:100%;
+  height:auto;
+}
+
+/*Agent pages CSS*/
+.agent1, .agent2, .agent3, .agent4 {
+  position: relative;
+  width: 25%;
+}
+
+.agent-pic {
+  display: block;
+  width: 100%;
+  height: auto;*/
 }
 
 .overlay {
