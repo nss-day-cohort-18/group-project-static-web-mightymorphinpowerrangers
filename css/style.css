@@ -8,11 +8,6 @@ body {
     padding-left: 80px;
 }
 
-.column {
-  background-color: black;
-
-}
-
 .overlay {
   position: absolute;
   bottom: 0;
