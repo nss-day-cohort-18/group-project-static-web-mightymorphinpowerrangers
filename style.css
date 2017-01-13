@@ -1,0 +1,41 @@
+#info-unit {
+  display: flex;
+}
+
+body, section {  
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+/*body, section {
+    color: white;
+    text-align: center;
+    background-color: grey;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}*/
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/*#info-unit {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+#info-uunit{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
