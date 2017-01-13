@@ -1,0 +1,32 @@
+/*#info-unit {
+  display: flex;
+}*/
+
+body {
+    background-color: lightblue;
+}
+
+h1, section {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#info-unit {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+#info-uunit{
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
