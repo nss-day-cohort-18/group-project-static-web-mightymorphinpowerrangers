@@ -1,11 +1,28 @@
-*navbanner {
-	width: contain;
+
+body {
 	margin: 0;
-	padding: 0;
-	position: relative; /* had to set to relative in order to overlay h1, thus affecting the image parameters */
+	padding-bottom: 0px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+}
+
+#nav {
+	position: fixed;
+	margin: 0;
+	padding: 2px;
+	display: flex;
+	background-color: #666600;
+}
+#navbanner {
+	width: 100%;
+	margin: 0;
+	padding-left: -80px;
+	position: fixed; /* had to set to relative in order to overlay h1, thus affecting the image parameters */
+
 }
 h1 {
-	position: absolute;
+	position: fixed;
 	top: 200px;
 	left: 0;
 	width: 100%;
@@ -35,6 +52,7 @@ h1 span.spacer {
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 #fixedbar ul {
