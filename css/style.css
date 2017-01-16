@@ -32,7 +32,7 @@ body {
 }
 
 /*Agent pages CSS*/
-.agent1, .agent2, .agent3, .agent4 {
+.agent, .agent, .agent, .agent {
   position: relative;
   width: 25%;
 }
@@ -56,19 +56,19 @@ body {
   text-align: center;
 }
 
-.agent1:hover .overlay {
+.agent:hover .overlay { 
   width: 100%;
 }
 
-.agent2:hover .overlay {
+.agent:hover .overlay {
   width: 100%;
 }
 
-.agent3:hover .overlay {
+.agent:hover .overlay {
   width: 100%;
 }
 
-.agent4:hover .overlay {
+.agent:hover .overlay {
   width: 100%;
 }
 
