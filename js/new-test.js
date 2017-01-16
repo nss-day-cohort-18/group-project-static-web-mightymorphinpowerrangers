@@ -2,8 +2,9 @@ function fillDOM(dataArray) {
 
 	var parent = document.getElementById("display-case");
 	var target = parent.getElementsByTagName("DIV");
-	console.log(parent);
-	console.log(target);
+	// console.log(parent);
+	// console.log(target);
+
 	for (var i = 0; i < target.length; i++) {
 
 		// console.log(target[i].hasAttribute("class"));
@@ -19,8 +20,8 @@ function fillDOM(dataArray) {
 			target[i].getAttribute("class") === "product-column" ) {
 			
 			//Fill the div with an <img> and a <p>.
-			while(target[i].hasChildNodes()) {
-			target[i].removeChild(target[i].firstChild)
+			while(target[i].hasChildNodes()) { 
+				target[i].removeChild(target[i].firstChild)
 			}	
 			target[i].appendChild(document.createElement("IMG"));
 			target[i].appendChild(document.createElement("P"));
@@ -32,10 +33,10 @@ function fillDOM(dataArray) {
 			//Give the <img> the "src" attribute.
 			target[i].firstChild.setAttribute("src", dataArray[i].img);
 			
+				console.log(Object.keys(dataArray[0]).length);
 			//Fill the <p> with product info.
 			for (var y = 0; y < dataArray.length; y++) {
 				for ( var q = 0; q < Object.keys(dataArray[y]).length-1; q++) {
-				console.log(dataArray[y][q]);
 				target[i].firstChild.nextSibling.innerHTML += dataArray[y][q] + "\n";
 				}
 			}
