@@ -1,3 +1,69 @@
+//Here we fill the main <div> in the product.html page with the product info. First the function grabs the target div by its id, "display-case". Then it is scrubbed of child nodes. The for loop appends a child div to 'display-case', then fills it 
+function fillDOM(dataObj) {
+
+	var target = document.getElementById("display-case");
+	// console.log("num child nodes: " + target.hasChildNodes());
+
+	while (target.hasChildNodes() ){
+		target.removeChild(target.childNodes[0]);
+	}
+	// console.log("num child nodes: " + target.hasChildNodes());
+
+	for (var i= 0; i< dataObj.length; i++ ){
+		target.appendChild(document.createElement("P"));
+		let contentNow = dataObj[i];
+		// console.log("Thing to place: " + Object.keys(contentNow));
+		let elementNow = target.childNodes[i];
+		// console.log("Where thing is being placed: " + elementNow);
+		// console.log(contentNow, elementNow, i, target);
+		var keys = Object.keys(contentNow);
+		// console.log(keys);
+		// console.log(contentNow);
+		// console.log(contentNow)
+		for (var i= 0; i< keys.length-1; i++) {
+
+			var productInfo = "";
+			// console.log(typeof keys[i]);
+			// console.log(Boolean(elementNow.innerHTML));
+			var prop = keys[i];
+			console.log(contentNow[prop]);
+			productInfo += prop + ": " + contentNow[prop] + "\n";
+			if (i< keys.length-2) {
+				elementNow.innerHTML = productInfo;
+				break;
+			}
+		}
+	}
+}
+
+//This function isn't strictly necessary, as the product data is already sorted in productObj, and the DOM is filled from index 0 upwards. However, this function will place any product adjacent in the DOM with another product of its category. "category" is a property of each object, and the name of the category is an integer.
+//It's being kind of a nuisance, so I'm gonna just comment it out...
+
+// function sort(contentNow, elementNow, index, target, dataObj){
+// 	// console.log(contentNow.category);
+// 	if (target[index-1] > -1)
+		
+// 		console.log(contentNow.category !== dataObj[index-1].category);
+
+// 	if (target[index-1] 
+// 		&& 
+// 		contentNow.category !== contentNow[index-1].category ){
+
+// 		for (let i= index; i< elementNow.parentNode.childNodes.slice[0, index+1]; i++ ){
+// 			var toPlace = contentNow[index].category;
+// 			var toCompare = contentNow[index-i].category;
+
+// 			if ( toPlace === toCompare ){
+// 				toCompare.append(toPlace);
+// 				break;
+// 			}
+// 		} 
+// 	} else {
+// 		;
+// 	}
+// }
+
+
 var productObj = {
 	
 	petalCastle: {
@@ -59,10 +125,12 @@ var productObj = {
 	}
 };
 
+
+
 var productArray = Object.values(productObj);
+ console.log(productArray);
+// console.log(document.getElementById("display-case"))
 
-console.log(productArray);
-
-if (document.getElementById("display-container")) {
-	fillDom(productArray);
+if (document.getElementById("display-case")) {
+	fillDOM(productArray);
 }
