@@ -1,0 +1,113 @@
+
+body {
+	margin: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+}
+
+#nav {
+	position: fixed;
+	margin: 0;
+	padding: 2px;
+	display: flex;
+	background-color: #666600;
+}
+#navbanner {
+	width: 100%;
+	margin: 0;
+	padding-left: -80px;
+	position: fixed; /* had to set to relative in order to overlay h1, thus affecting the image parameters */
+
+}
+h1 {
+	position: fixed;
+	top: 200px;
+	left: 0;
+	width: 100%;
+
+
+}
+
+h1 span {
+	color: white;
+	font: bold 50px/70px Helvetica, sans-serif;
+	letter-spacing: -1px;
+	background: rgb(77, 19, 0); /* fallback color */
+	background: rgba(77, 19, 0, 0.7);
+	padding: 10px 75px;
+}
+h1 span.spacer {
+	padding:0 5px;
+}
+}
+/*h2 {
+	position: absolute;
+	top: 270px;
+	color: white;
+	
+
+}*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#fixedbar ul {
+	position: fixed;
+	margin: 0;
+	padding: 2px;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	background-color: #666600;
+	width: contain;
+	height: 60px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font: sans-serif;
+	font-weight: bold;
+	font-size: relative; 
+	
+}
+
+li {
+	float: center;
+}
+
+li a {
+	display: block;
+	color: white;
+	margin: 0;
+	padding: 20px 50px;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+}
+
+#fixednav li {
+	display: inline-block;
+	
+
+}
+#fixednav .active {
+    background-color: white;
+    color: #661a00;
+}
+
+/* Change the link color on hover */
+#fixednav li a:hover {
+    background-color: #661a00;
+    color: white;
+}
+
+ 
+
+/*ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}*/

@@ -1,9 +1,10 @@
 body {
     background-color: #c0e2a0;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-right: 80px;
     padding-bottom: 50px;
     padding-left: 80px;
+    margin-top: 0px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
