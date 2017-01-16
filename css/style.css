@@ -11,12 +11,15 @@ body {
   background-color: #dbd0c6;
   color: black;
   padding: 50px;
+
 }
 
 .container h1 {
   font-size: 3em;
   text-align: center;
 }
+
+
 
 .column {
   width:50%;
@@ -77,4 +80,27 @@ body {
   left: 0;
   padding: 10px;
   color: white;
+}
+
+/*CSS for product page*/
+
+.product-column {
+  width: 25%;
+ float: left;
+ text-align: center;
+}
+
+.container, p {
+  background-color: #dbd0c6;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+/*CSS for about*/
+
+.about, p {
+  
+display:block;
+word-wrap: square;
 }
