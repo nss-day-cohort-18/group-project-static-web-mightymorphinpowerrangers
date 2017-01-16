@@ -17,20 +17,30 @@ function fillDOM(dataArray) {
 		if ( target[i].hasAttribute("class") 
 			&& 
 			target[i].getAttribute("class") === "product-column" ) {
+			
 			//Fill the div with an <img> and a <p>.
 			while(target[i].hasChildNodes()) {
 			target[i].removeChild(target[i].firstChild)
 			}	
 			target[i].appendChild(document.createElement("IMG"));
-			console.log(target[i].firstChild);
+			target[i].appendChild(document.createElement("P"));
+
+			//Give new elements their classes, connecting them to the stylesheet.
+			target[i].firstChild.nextSibling.setAttribute("class", "product-copy")
+			target[i].firstChild.setAttribute("class", "product-column");
+
 			//Give the <img> the "src" attribute.
+			target[i].firstChild.setAttribute("src", dataArray[i].img);
+			
 			//Fill the <p> with product info.
+			for (var y = 0; y < dataArray.length; y++) {
+				for ( var q = 0; q < Object.keys(dataArray[y]).length-1; q++) {
+				console.log(dataArray[y][q]);
+				target[i].firstChild.nextSibling.innerHTML += dataArray[y][q] + "\n";
+				}
+			}
 		} 
 	}
-
-	// for (i = 0; i < dataArray.length; i++) {
-
-	// }
 }
 
 
