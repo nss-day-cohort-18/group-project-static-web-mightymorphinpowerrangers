@@ -33,16 +33,17 @@ function fillDOM(dataArray) {
 			//Give the <img> the "src" attribute.
 			target[i].firstChild.setAttribute("src", dataArray[i].img);
 			
-				console.log(Object.keys(dataArray[0]).length);
-			//Fill the <p> with product info.
-			for (var y = 0; y < dataArray.length; y++) {
-				for ( var q = 0; q < Object.keys(dataArray[y]).length-1; q++) {
-				target[i].firstChild.nextSibling.innerHTML += dataArray[y][q] + "\n";
-				}
+			console.log(Object.keys(dataArray[0]).length);
+			//Fill the <p> with product info
+			var prop = Object.keys(dataArray[i]);
+
+			for (var y = 0; y < prop.length-1; y++) {
+				target[i].firstChild.nextSibling.innerHTML += prop[y] + ": " + dataArray[i][prop[y]] + "\n";
 			}
-		} 
-	}
+		}
+	} 
 }
+
 
 
 var productArray = [
